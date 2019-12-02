@@ -45,7 +45,7 @@ char decrypt(char *ienc_password,char x,char y){
 				for(int tl=x;tl<=y;tl++){
 					letter_ch[2]=tl;
 					for(int ll=x;ll<=y;ll++){
-						letter_ch[3]=ll;	
+						letter_ch[3]=ll;
 						for(int ll=0;ll=99;ll++){
 						letter_ch[4]=ll;
 						sprintf(letter_ch, "%c%c%c%c", fl, sl, tl,ll); 

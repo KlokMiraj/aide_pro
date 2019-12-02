@@ -6,16 +6,16 @@
 #include <pthread.h>
 #include <malloc.h>
 #include <time.h>
-
+#define no_th 4 //no_of_threads
 
 typedef struct{
 	int init;
 	int blocks;
-	}arguments_t; //for the thread argument
+	}vector_args; //for the thread argument
 
 pthread_mutex_t mtx; //mutex decleration
 pthread_cond_t conda, condb,condc, condp; //for signaling between the threads
-int buffer =0; //Buffer variable to know the state of mutex
+int buffer =0; //Buffer variable for state of mutex
 
 /* Since C doesn't allow dynamic operations on array*/
 void sli_salt(char *dest,char *src,int start,int len){
@@ -33,17 +33,7 @@ char decrypt(char *ienc_password,char x,char y){
 
 	sli_salt(salt_slice,ienc_password,0,6);
 	
-	//setting up variables for signaling mutex
-		/*switch(x){
-			case 'A':
-				conda=x;
-			break;
-			case 'G':
-				condb=y;
-			break;
-			case 'O':
-				condc=
-		}*/
+	/*fl,sl,tl,ll refers to first letter, second letter, third letter and last letter respectively*/
 		
 		for(int fl=x;fl<=y;fl++){
 			 letter_ch[0]=fl;
@@ -82,7 +72,7 @@ char decrypt(char *ienc_password,char x,char y){
 								break;
 						}
 					}
-						sprintf(letter_ch, "%c%c%c%c", fl, sl, tl,ll); 
+					sprintf(letter_ch, "%c%c%c%c", fl, sl, tl,ll); 
 					enc_check=(char *)crypt(letter_ch,salt_slice);
 					count++;
 						//file fp=fwrite("'password',fl,'.txt'","w");
@@ -99,22 +89,43 @@ char decrypt(char *ienc_password,char x,char y){
 				}
 			}
 	}
+	pthread_exit(0);
 		
 	return (!letter_ch);
 }
 
 
-/*parallel processing the crack batchjob*/
+/*parallel processing the crack batchjob*/ /*implemented as pointer function for accesibility*/
 void* process_def(void* arg){
+	 pthread_t *t = malloc(sizeof(pthread_t) * no_th);
+  	 vector_args *a = malloc(sizeof(vector_args) * no_th);
+int i=0;
+  while(i<no_th){
+    a[i].init = i;
+    a[i].blocks = no_th;
+  i++;
+  }
+	//initializing the thread sequence
+	
+ //void decrypt(); //need to call this from here instead of main and pass the arguments for each threads
+  
+	pthread_mutex_init(&mtx,0); //initializing the mutex schedueled earlier
+  for(i<no_th;i++;){
+    pthread_create(&t[i], NULL, decrypt, &a[i]); //change the argument later //iteration compilation with suppressed error for function
+  }
+	//pthread_cond_init(); //for all four threads and their mutual exclusion
 
-	/*for(){
+  for(i=0;i<no_th;i++){
+    pthread_join(t[i], NULL);
+  }
 
- 	pthread_mutex_lock(&mtx);
+	//pthread_cond_init(); //for all four threads and their exclusion conclusion
+  free(t);
+  free(a);
+
+  pthread_mutex_destroy(&mtx);
+}
 	
-	}*/
-	
-	
-	}
 
 
 int main(int argsc,char *argsv[]){
