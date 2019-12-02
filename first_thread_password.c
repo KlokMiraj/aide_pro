@@ -124,6 +124,9 @@ int i=0;
   free(a);
 
   pthread_mutex_destroy(&mtx);
+
+
+	//find a way to spin lock all of the four threads in a loop after the exclusion!
 }
 	
 
