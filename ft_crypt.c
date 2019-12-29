@@ -11,17 +11,6 @@ typedef struct{
 	int block_size;
 	}arguments_t;
 
-/*void decrypt(enc_password){
-	int x, y,z,w;
-	char letter_checked[4];
-	char salt_slice[7];
-	letter_checked[4]="/0"; 
-	char *enc_check;
-
-	sli_salt(
-		
-}*/
-
 /* Since C doesn't allow dynamic operations on array*/
 void sli_salt(char *dest,char *src,int start,int len){
 memcpy(dest,src + start, len);
@@ -29,7 +18,7 @@ memcpy(dest,src + start, len);
 	}
 
 /*decrypt function for bruteforcing the password*/
-char decrypt(char *ienc_password,char x,char y){
+char decrypt(,char x,char y){
 	char letter_ch[6];
 	char salt_slice[7];
 	char *enc_check;
@@ -54,45 +43,37 @@ char decrypt(char *ienc_password,char x,char y){
 						//file fp=fwrite("'password',fl,'.txt'","w");
 
 						//CHECKING IF  ENCPASSWORD is getting mixed with salt
-						if(strcmp(enc_check,ienc_password)==0){
-							printf("#%-8d%s %s\n", count, letter_ch, enc_check);
+								if(strcmp(enc_check,ienc_password)==0){
+									printf("#%-8d%s %s\n", count, letter_ch, enc_check);
+									}
+								else{
+									printf(" %-8d%s %s\n", count, letter_ch, enc_check);
+								}
+									}
+				
+								}		
 							}
-						else{
-							printf(" %-8d%s %s\n", count, letter_ch, enc_check);
 						}
 					}
-				
-					}		
-				}
-			}
-	}
 		
-	return (!letter_ch);
-}
+					return (!letter_ch);
+						}
 
-/*parallel processing the crack batchjob*/
-void pass_process(){
-	
-	
-	}
+				/*parallel processing the crack batchjob*/
+				//void pass_process(){
+					
+					
+					//}
 
 
 int main(int argsc,char *argsv[]){
 		
-
 /*printf("\n%s\n",argsv[0]);
 		printf("\n%d\n",argsc-1);
 		for(int i=1;i<argsc;i++){
 		printf("argsv[%d]=%s\n",i,argsv[i]);
 	return 1;
 	}-*/
-	
-	//Deal with the escaping character like $$ next time;
-	
-	//counting the password
-		/*int array_count=sizeof(*argsv)/sizeof(argsv[1]);
-		printf("%s",argsv[1]);*/
-		
 
 	if(argsc!=2 || strlen(argsv[1])<9){
 	perror("Either Insuffecient Argument or Encrypted passwords not 92 characters long including salt\n");

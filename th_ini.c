@@ -79,21 +79,6 @@ void pass_process(){
 
 int main(int argsc,char *argsv[]){
 		
-
-/*printf("\n%s\n",argsv[0]);
-		printf("\n%d\n",argsc-1);
-		for(int i=1;i<argsc;i++){
-		printf("argsv[%d]=%s\n",i,argsv[i]);
-	return 1;
-	}-*/
-	
-	//Deal with the escaping character like $$ next time;
-	
-	//counting the password
-		/*int array_count=sizeof(*argsv)/sizeof(argsv[1]);
-		printf("%s",argsv[1]);*/
-		
-
 	if(argsc!=2 || strlen(argsv[1])<9){
 	perror("Either Insuffecient Argument or Encrypted passwords not 92 characters long including salt\n");
     	return (EXIT_FAILURE);
