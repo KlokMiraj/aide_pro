@@ -18,7 +18,7 @@ memcpy(dest,src + start, len);
 	}
 
 /*decrypt function for bruteforcing the password*/
-char decrypt(,char x,char y){
+char decrypt(char *ienc_password,char x,char y){
 	char letter_ch[6];
 	char salt_slice[7];
 	char *enc_check;
