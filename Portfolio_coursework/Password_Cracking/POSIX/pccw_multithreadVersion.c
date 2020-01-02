@@ -31,10 +31,10 @@ char *enc;
 
 /***** 4 hash value of password supplied *******/
 char *encrypted_passwords[] = {
-  "$6$KB$PUtGvfAAHdh8/92SCkEAjarFqQI6k3e.3e9t8lZ1MN/wY5qvIG.RchUF4VzV6uKJDZL1up/s95NWn82Fz/FQR.",
-  "$6$KB$u98pcr1UEAEX25XrSrB2Eakm846e83r/lrp2REKCG5o/rphTou9l.3GiEFzchEHZAN9hoAYBlT/sMhr4RxFeL/",
-  "$6$KB$7JS8Bt9NYczSqQEpWl/8IMZDD4yIs2kYqUYud.83hoyiSpS6ZFF8SeIFm1P5KZvkA1ytLT8WeNG4l/.yaHiVf1",
-  "$6$KB$uZeo3hLi9vsKvvY.xhFwqRrLyBCB/v/q9vc8QGCaaCnhU8AkqigCnXBc/cNTM.bBPwSV2.6pNBwAf9p4jLsMC1"
+  "$6$KB$36REBSFzq1/dui1N6SgVpJNWbH7.H09nEmDF84hZhfeauI13ShDyaMT/d1tPMVh35NJKKkQrT6OIYDS9VLrIY0",
+  "$6$KB$y.PArc/oPKxP9VZrVz/PKh1YnIO5Y17fKuUf2fzN/CY9nsu8pM1A1sL1DFqP6opCSrghErWUmBWXeYxzV/yO51",
+  "$6$KB$dzMbKiZard0rTfPtzDNxInzgsgYk.xYdOMGPWk1ZH0u30ySyP7XaQWhcX/MkoLXjRsJrAAqY3GqB7xPOnboJc.",
+  "$6$KB$EboVTynH7cHCTdC3B.gP2Tq4yF/rJhziZlrhoUCq.TWT/3spujem0kTzlktwP6WJB/sx5DsbMeKzabWAEAsx1/"
 };  
 
 
