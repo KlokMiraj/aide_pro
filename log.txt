@@ -1,0 +1,114 @@
+commit a82cac1d2558bc53f8a9362aaeec3dd84adb820e
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Fri Jan 3 02:04:41 2020 +0545
+
+    almost_final
+
+commit 6b2dab9254138feb2974a499d8e1ce2eecc20610
+Merge: 3bebcb9 40de0e4
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Fri Jan 3 01:47:39 2020 +0545
+
+    merger
+
+commit 40de0e462bdaf89bf2ef41600b5638b49152b3cb
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Fri Jan 3 01:40:36 2020 +0545
+
+    jvvnbvgvhgv
+
+commit 3bebcb9697330f26ef9c226987ac650f3b26fc84
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Fri Jan 3 01:36:46 2020 +0545
+
+    when doesthis thing ends?
+
+commit bf1d779f05823492dd24870b0917b261effe31f3
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Fri Jan 3 00:52:30 2020 +0545
+
+    cuda_left
+
+commit f2eaa6f08b4faa91fb8f2517aaa32a55eb6abde6
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Thu Jan 2 21:47:45 2020 +0545
+
+    finished_cuda
+
+commit 311c03a122c2d6811ed0452433d75f6b284c7556
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Thu Jan 2 18:59:09 2020 +0545
+
+    refs_for_parallel_password
+
+commit 1d296bb34015d2fafe90e788dd748bd7e532cd3c
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Thu Jan 2 12:37:32 2020 +0545
+
+    refsdocs
+
+commit 121e1b5d4cf9bf7e92a613df5b1ae9948a3fe044
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Tue Dec 31 16:16:32 2019 +0545
+
+    estimation_table
+
+commit 6749f6c85a10cb44d4a55d53cecc26a9fe810d50
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Tue Dec 31 16:01:04 2019 +0545
+
+    replace_image
+
+commit 323d704e34589b26ddc37ddeb04839cf5779c84a
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Tue Dec 31 15:21:54 2019 +0545
+
+    password
+
+commit f60d796b94850e13c6ab99a8d05208e986e0f795
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Tue Dec 31 15:17:36 2019 +0545
+
+    sequential run
+
+commit d9c7c4d0c3402e1a410a60ec69b0295ad067c4dd
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Tue Dec 31 12:27:59 2019 +0545
+
+    refs before documentation
+
+commit 3034d5d73be084347caecbce781ce5624e938165
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Sun Dec 29 13:30:33 2019 +0545
+
+    outputs runs cuda
+
+commit 43f25e0454e9a06aed1814e58a009edca3dc70b5
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Sun Dec 29 13:23:55 2019 +0545
+
+    CUDA runs
+
+commit 9e0a290ac216f270d57e2d528ad05fb6393628b0
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Sun Dec 29 09:37:18 2019 +0545
+
+    organiged _codes
+
+commit f1798a1fd57f81578ed5f8e58bbc724ff84559fb
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Mon Dec 2 21:37:42 2019 +0545
+
+    spin_lock_addition
+
+commit 1a55a03ce198909979f1963e4b7c293620657718
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Mon Dec 2 21:34:26 2019 +0545
+
+    compile_mutex_spin_lock_suppressed_errors
+
+commit 93cfd27cf5bac499cceb667b04d6760b93a18b8e
+Author: klokMiraj <pudasainimetal96@gmail.com>
+Date:   Wed Nov 27 20:05:42 2019 +0545
+
+    first-upload
